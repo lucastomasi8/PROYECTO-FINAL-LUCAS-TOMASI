@@ -54,18 +54,19 @@ $green: #33D374;
     color: yellow;
 }
 @mixin sizes($width, $height) {
-    height: $height; 
+    height: $height;
     width: $width;
 }
 
 .box {
     @include sizes(500px, 50px);
 }
-$redes: (
+$redes: ( 
         twitter: #55acee,
         facebook:  #3a5795,
         send-mail: #C25E30
 ); 
+
 @each $red, $color in $redes {
    .btn--#{$red} {
        background-color: $color;
